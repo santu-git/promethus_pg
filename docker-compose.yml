@@ -13,8 +13,6 @@ services:
     volumes:
       - ./sample-config-prometheus.yml:/etc/prometheus/prometheus.yml:ro
   prometheus_postgresql_adapter:
-    build:
-      context: .
     depends_on:
       - db
       - prometheus
