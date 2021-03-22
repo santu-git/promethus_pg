@@ -3,7 +3,7 @@ services:
     environment:
       POSTGRES_PASSWORD: postgres
       POSTGRES_USER: postgres
-    image: timescale/pg_prometheus:latest
+    image: timescale/pg_prometheus:latest-pg11
     ports:
       - 5432:5432/tcp
   prometheus:
